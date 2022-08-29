@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- google material icons -->
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ポートフォリオ</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/init.js"></script>
+
+
+    <!-- <div class=" navbar-fixed">
+        <nav>
+            <div class="hide-on-large-only nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#!" class="brand-logo center">ロゴ</a>
+            </div>
+        </nav>
+
+    </div> -->
+
+    <ul id="slide-out" class="sidenav sidenav-fixed deep-orange lighten-3">
+        <div class=" row ">
+            <!-- <div class="valign-wrapper" style="height: 100px;">
+                <h5>This should be vertically aligned</h5>
+            </div> -->
+
+            <img class="col s8 offset-s2 circle " src="./images/icon.jpg"
+                style="margin-top: 120px; margin-bottom: 30px;">
+            <!-- <p class="col s12 ">盛岡情報ビジネス＆デザイン専門学校</p> -->
+            <!-- <h5 class="col s12 " style="margin-bottom: 30px;">君成田 昌大</h5> -->
+            <ul class="collapsible col s12">
+                <!-- <li class="bold"><a class="collapsible-header waves-effect waves-teal">
+                        <i class="material-icons">book</i>
+                        書籍管理<i class="material-icons right">keyboard_arrow_down
+                            right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li class="active"><a href="{{url_for('book_list_student',name=name,mail=mail)}}">
+                                    <i class="material-icons">list</i>書籍一覧</a></li>
+                            <li><a href="{{url_for('search',name=name,mail=mail)}}">
+                                    <i class="material-icons">search</i>書籍検索</a></li>
+                        </ul>
+                    </div>
+                </li> -->
+
+                <li class="bold center-align">
+                    <a class="collapsible-header " href="#about">
+                        ABOUT
+                    </a>
+                </li>
+                <li class="bold center-align">
+                    <a class="collapsible-header " href="#portfolio">
+                        PORTFOLIO
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </ul>
+
+    <div class="row" id="main">
+        <!-- About -->
+        <div class="col s12" style="margin-bottom: 30px;" id="about">
+            <h3 class="center orange-text ">About Me</h3>
+            <p class="center" style="margin-bottom: 50px;">私について</p>
+
+
+            <div class="col s12 m5">
+                <img class="col s4  offset-s4  m6 l5 xl4 circle center hide-on-med-and-up" src="./images/icon.jpg"
+                    style=" margin-right: 20px;">
+                <img class="center-align col s5  offset-s4  m8 l8 xl5 circle right hide-on-small-only"
+                    src="./images/icon.jpg" style=" margin-bottom: 20px;">
+
+            </div>
+            <div class="col s12 m7" style="margin-bottom: 20px;">
+                <p>盛岡情報ビジネス＆デザイン専門学校</p>
+                <h4>君成田 昌大</h4>
+            </div>
+
+            <div class="col s3 m2 l2 xl1">
+                <div style="height: 40px;">
+                    <h5>GitHub</h5>
+                </div>
+                <div style="height: 40px;">
+                    <h5>Mail</h5>
+                </div>
+            </div>
+            <div class="col s9 m4 l4 xl5">
+                <div style="height: 40px;">
+                    <a href="https://github.com/KimiMasa1021" target="_blank">
+                        <h5 style="font-size: 20px;">@KimiMasa1021</h5>
+                    </a>
+                </div>
+                <div style="height: 40px;">
+                    <h5 style="font-size: 20px;">m.kiminarita.sys21@morijyobi.ac.jp</h5>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- portfolio -->
+        <div class="col s12" id="portfolio">
+            <h3 class="center orange-text ">Portfolio</h3>
+            <p class="center" style="margin-bottom: 50px;">作成集</p>
+
+            <div class="col s12" style="margin-bottom: 20px;">
+                <a href="https://play.google.com/store/apps/details?id=com.kimikimi.zen03" target="_blank">
+                    <div class="col s3 m2 offset-m2 l2 offset-l2 xl2 offset-xl2">
+                        <img class="col s11 xl8 z-depth-3 aspect-ratio-block" src="./images/3.png" style="padding: 0;">
+                    </div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.kimikimi.zen03" target="_blank">
+                    <div class="col s3 m2 l2 xl2">
+                        <img class="col s11 xl8 z-depth-3 aspect-ratio-block" src="./images/2.png" style="padding: 0;">
+                    </div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.kimikimi.zen03" target="_blank">
+                    <div class="col s3 m2 l2 xl2">
+                        <img class="col s11 xl8 z-depth-3 aspect-ratio-block" src="./images/4.jpg" style="padding: 0;">
+                    </div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.kimikimi.zen03" target="_blank">
+                    <div class="col s3 m2 l2 xl2">
+                        <img class="col s11 xl8 z-depth-3 aspect-ratio-block" src="./images/1.png" style="padding: 0;">
+                    </div>
+                </a>
+            </div>
+
+            <a href="https://play.google.com/store/apps/details?id=com.kimikimi.zen03" target="_blank">
+                <div class="col s12 m12 l6 xl6   ">
+                    <div class="card resizeimg text-black">
+                        <img class="col s8 l12 xl8" style="padding: 5px  5px 0 5px ;"
+                            src="https://play-lh.googleusercontent.com/RiAO4L3qgFZNg2dHNdJlPu90oTe9G2Kh7DSuqPZg3N6W3O5xDiCpYyaSz3hDmUK82oQ=w526-h296-rw">
+                        <div class="col s4 l12 xl4">
+                            <blockquote class="col s12" style="margin: 10px 0 0 0 ;">
+                                <h6>タイトル</h6>
+                            </blockquote>
+                            <p class="col s12" style="margin: 0;padding: 10px 0 0 0;">フォトペイント｜お絵描き・メモアプリ</p>
+                            <blockquote class="col s12" style="margin: 10px 0 0 0 ;">
+                                <h6>製作期間</h6>
+                            </blockquote>
+                            <p class="col s12" style="margin: 0;padding: 10px 0 0 0;">2022年10月10日～<br>2022年10月21日</p>
+                        </div>
+
+                        <blockquote class="col s12" style="margin: 10px  0 0 10px  ;">
+                            <h6>作成のポイント</h6>
+                        </blockquote>
+                        <p class="col s12" style="margin: 0;padding: 10px 0 0 10px;">
+                            作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.kimikimi.zen03" target="_blank">
+                <div class="col s12 m12 l6 xl6   ">
+                    <div class="card resizeimg text-black">
+                        <img class="col s8 l12 xl8" style="padding: 5px  5px 0 5px ;"
+                            src="https://play-lh.googleusercontent.com/4E-laUEKrglIMa_h6aZeKlVgbB_PxNIj3RYUpYKx6cjn9DZLTx8Kd_2hgi-uqfDoEw=w416-h235-rw">
+                        <div class="col s4 l12 xl4">
+                            <blockquote class="col s12" style="margin: 10px 0 0 0 ;">
+                                <h6>タイトル</h6>
+                            </blockquote>
+                            <p class="col s12" style="margin: 0;padding: 10px 0 0 0;">フォトペイント｜お絵描き・メモアプリ</p>
+                            <blockquote class="col s12" style="margin: 10px 0 0 0 ;">
+                                <h6>製作期間</h6>
+                            </blockquote>
+                            <p class="col s12" style="margin: 0;padding: 10px 0 0 0;">2022年10月10日～<br>2022年10月21日</p>
+                        </div>
+
+                        <blockquote class="col s12" style="margin: 10px  0 0 10px  ;">
+                            <h6>作成のポイント</h6>
+                        </blockquote>
+                        <p class="col s12" style="margin: 0;padding: 10px 0 0 10px;">
+                            作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.kimikimi.zen03" target="_blank">
+                <div class="col s12 m12 l6 xl6   ">
+                    <div class="card resizeimg text-black">
+                        <img class="col s8 l12 xl8" style="padding: 5px  5px 0 5px ;"
+                            src="https://play-lh.googleusercontent.com/23YKicmcbpkFzRSbu8NtL26v_NvhwG89-ZVmZhhDBCW9TKlgd1JaAIWeNLXLOwnGbQ=w416-h235-rw">
+                        <div class="col s4 l12 xl4">
+                            <blockquote class="col s12" style="margin: 10px 0 0 0 ;">
+                                <h6>タイトル</h6>
+                            </blockquote>
+                            <p class="col s12" style="margin: 0;padding: 10px 0 0 0;">フォトペイント｜お絵描き・メモアプリ</p>
+                            <blockquote class="col s12" style="margin: 10px 0 0 0 ;">
+                                <h6>製作期間</h6>
+                            </blockquote>
+                            <p class="col s12" style="margin: 0;padding: 10px 0 0 0;">2022年10月10日～<br>2022年10月21日</p>
+                        </div>
+
+                        <blockquote class="col s12" style="margin: 10px  0 0 10px  ;">
+                            <h6>作成のポイント</h6>
+                        </blockquote>
+                        <p class="col s12" style="margin: 0;padding: 10px 0 0 10px;">
+                            作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.kimikimi.zen03" target="_blank">
+                <div class="col s12 m12 l6 xl6   ">
+                    <div class="card resizeimg text-black">
+                        <img class="col s8 l12 xl8" style="padding: 5px  5px 0 5px ;"
+                            src="https://play-lh.googleusercontent.com/xbe4gWX39DDBhDAdRRdbPJ5S-zXeKpy4k2HGvV1scBcP6jqMuZmJ-TP9k1ErAv2QSno=w416-h235-rw">
+                        <div class="col s4 l12 xl4">
+                            <blockquote class="col s12" style="margin: 10px 0 0 0 ;">
+                                <h6>タイトル</h6>
+                            </blockquote>
+                            <p class="col s12" style="margin: 0;padding: 10px 0 0 0;">フォトペイント｜お絵描き・メモアプリ</p>
+                            <blockquote class="col s12" style="margin: 10px 0 0 0 ;">
+                                <h6>製作期間</h6>
+                            </blockquote>
+                            <p class="col s12" style="margin: 0;padding: 10px 0 0 0;">2022年10月10日～<br>2022年10月21日</p>
+                        </div>
+
+                        <blockquote class="col s12" style="margin: 10px  0 0 10px  ;">
+                            <h6>作成のポイント</h6>
+                        </blockquote>
+                        <p class="col s12" style="margin: 0;padding: 10px 0 0 10px;">
+                            作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント作成のポイント</p>
+                    </div>
+                </div>
+        </div>
+        </a>
+
+    </div>
+
+</body>
+
+</html>

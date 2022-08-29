@@ -1,0 +1,49 @@
+.text-black {
+    color: black;
+}
+
+#main,
+#header {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+
+    #main,
+    #header {
+        padding-left: 0;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .resizeimg {
+        height: 350px;
+    }
+}
+
+@media (min-width: 600px) {
+    .resizeimg {
+        height: 400px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .resizeimg {
+        height: 520px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .resizeimg {
+        height: 400px;
+    }
+}
+
+.aspect-ratio-block {
+    padding: 0;
+    aspect-ratio: 1;
+    border-radius: 10px;
+}
